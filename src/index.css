@@ -1,2 +1,26 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+
+/* Responsive height */
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 50vh;
+  }
+}
+.swiper-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+}
+/* Make pagination dots yellow */
+.swiper-pagination-bullet {
+  background-color: #facc15 !important; /* Tailwind's yellow-400 */
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #facc15 !important;
+  opacity: 1;
+}
+

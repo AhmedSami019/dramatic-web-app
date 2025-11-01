@@ -19,7 +19,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-black/40 backdrop-blur-md items-center fixed top-0 left-0 right-0">
+    <div className="navbar bg-black/60 backdrop-blur-md items-center fixed top-0 left-0 right-0 z-50">
       <div className="w-11/12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -60,7 +60,7 @@ const Navbar = () => {
         {/* this is the right side */}
         <div className="navbar-end gap-4 items-center">
           {/* this is searchbar of navbar */}
-          <label className="input rounded-4xl">
+          <label className="input rounded-full bg-white/40 border border-transparent focus-within:border-yellow-500 transition duration-300">
             <svg
               className="h-[1em] opacity-50"
               xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@ const Navbar = () => {
                 <path d="m21 21-4.3-4.3"></path>
               </g>
             </svg>
-            <input type="search" required placeholder="Search" />
+            <input type="search" required placeholder="Search" className="bg-transparent text-sm text-white outline-none placeholder-white/60" />
           </label>
 
           {/* this is avatar for profile */}
